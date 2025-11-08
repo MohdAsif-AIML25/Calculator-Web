@@ -1,0 +1,132 @@
+ /*Set background and center everything */
+/* Set background with gradient */
+/* Center everything */
+/* Fix the body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(100deg, #743ad4, #8c982a);
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  justify-content: center;
+  margin: 0; /* Remove default margin */
+}
+  
+  /* Centering the calculator */
+  .container {
+    background: rgba(116, 77, 119, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 320px;
+    text-align: center;
+  }
+  
+
+
+/* Center the heading */
+.text-center {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  /* text-transform: uppercase; */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Calculator box */
+.container {
+  
+    background: rgba(116, 77, 119, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 320px;
+    text-align: center;
+  }
+
+
+/* Display box */
+.display input {
+  width: 100%;
+  height: 60px;
+  font-size: 26px;
+  text-align: right;
+  padding: 8px 1px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background: #302f32;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  caret-color: red;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 1, 1.2);
+}
+
+/* Grid layout for buttons */
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Button styles */
+.button {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: #e4d5d5;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effects */
+.button:hover {
+  background: #d1d1d1;
+  transform: scale(1.05);
+}
+
+/* Active effect */
+.button:active {
+  background: #676565;
+  transform: scale(0.98);
+}
+
+/* Special buttons */
+.button-ac {
+  background: #ff6f61;
+  color: white;
+}
+
+.button-ac:hover {
+  background: #e65c50;
+}
+
+.button-equal {
+  background: #4caf50;
+  color: white;
+}
+
+.button-equal:hover {
+  background: #3c9b40;
+}
+
+/* Zero button spans two columns */
+.button-zero {
+  grid-column: span 1;
+}
+.button-Del{
+  grid-column: span 5;
+  text-align: center;
+  background-color: red;
+  color: white;
+  box-shadow: 2px 2px 5px rgb(237 64 64 / 76%);
+  
+}
+
